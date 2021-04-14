@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/createPost"
+            android:clickable="true"
+            android:onClick="createPost"
+            android:backgroundTint="#4759BA"
+            android:text="New Post">
+        </Button>
+
+        <Button
+            android:clickable="true"
+            android:onClick="viewAllPosts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/viewAllPosts"
+            android:backgroundTint="#9C27B0"
+            android:layout_weight="1"
+            android:text="View All">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:id="@+id/login"
+            android:clickable="true"
+            android:onClick="login"
+            android:backgroundTint="#BA4747"
+            android:text="Login">
+        </Button>
+
+        <Button
+            android:clickable="true"
+            android:onClick="utility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/utility"
+            android:backgroundTint="#759A30"
+            android:layout_weight="1"
+            android:text="Utility">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

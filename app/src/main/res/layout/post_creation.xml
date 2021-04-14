@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="50dp"
+    tools:context=".PostCreationActivity"
+    android:id="@+id/layout">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF4759BA"
+                android:text="Create Post"
+                android:layout_centerHorizontal="true"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                >
+            </TextView>
+
+            <EditText
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:hint="Location Nickname"
+                android:id="@+id/locD">
+            </EditText>
+
+            <EditText
+                android:text=""
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/locD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:hint="What's special about here?"
+                android:id="@+id/postC">
+            </EditText>
+
+
+            <Button
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/submitButton"
+                android:backgroundTint="#4759BA"
+                android:textColor="@color/white"
+                android:text="Post"
+                android:layout_below="@+id/postC"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:onClick="addPost"
+                android:layout_alignParentRight="true"
+                >
+
+            </Button>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/submitButton"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/destEditText"
+                    android:layout_marginRight="5dp"
+                    android:hint="Search Posts by Destination"
+                    android:text=""
+                    android:paddingRight="50dp"
+                    />
+
+                <Button
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:clickable="true"
+                    android:onClick="viewSearchResults"
+                    android:id="@+id/search"
+                    android:backgroundTint="#15A180"
+                    android:layout_alignParentRight="true">
+                </Button>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="239dp"
+                    android:layout_height="224dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="102dp"
+                    android:layout_marginEnd="150dp"
+                    android:layout_marginRight="150dp"
+                    tools:src="@tools:sample/avatars" />
+
+                <Button
+                    android:id="@+id/btnCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/search"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="98dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="take picture" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
